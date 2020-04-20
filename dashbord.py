@@ -62,3 +62,6 @@ for rec in cursor.fetchall():
 fig3= go.Figure(data=go.Scatter(x=x3, y=y3, mode='markers'))
 fig3.update_layout(xaxis_title='WEST       longitude       EAST',)
 py.plot(fig3, auto_open=True, filename='graph3')
+
+cursor.close()
+connection.close()
